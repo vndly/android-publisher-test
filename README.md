@@ -1,2 +1,1 @@
-# android-publisher-test
-Android Publisher Test
+# Android Publisher Test
