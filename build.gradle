@@ -11,8 +11,7 @@ buildscript
     dependencies
     {
         classpath 'com.android.tools.build:gradle:3.1.3'
-        //classpath 'com.mauriciotogneri:androidpublisher:0.0.1'
-        classpath 'com.mauriciotogneri:javautils:1.8.0'
+        classpath 'com.mauriciotogneri:androidpublisher:0.0.5'
     }
 }
 
@@ -25,12 +24,10 @@ allprojects
     }
 }
 
-task publish  {
+task publish() {
     doLast
     {
-        def publisher = com.mauriciotogneri.javautils.Randomized.chance(1)
-        publisher.publish('package', 'email', 'p12', 'apk', 'track')
-
-        println 'bye!'
+        def publisher = new com.mauriciotogneri.androidpublisher.Publisher()
+        publisher.publish(packageName, SERVICE_ACCOUNT_EMAIL, SERVICE_ACCOUNT_P12, apkPath, trackName)
     }
 }
