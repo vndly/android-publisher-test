@@ -9,3 +9,4 @@ gradle.properties
 # Ignore gradle files
 .gradle
 **/build
+**/release
