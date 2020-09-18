@@ -10,8 +10,8 @@ buildscript
 
     dependencies
     {
-        classpath 'com.android.tools.build:gradle:3.4.2'
-        classpath 'com.mauriciotogneri:androidpublisher:1.1.0'
+        classpath 'com.android.tools.build:gradle:4.0.1'
+        classpath 'com.mauriciotogneri:androidpublisher:1.2.1'
     }
 }
 
@@ -28,7 +28,7 @@ task publishApk() {
     doLast
     {
         def publisher = new Publisher()
-        publisher.publishApk(packageName, SERVICE_ACCOUNT_EMAIL, SERVICE_ACCOUNT_P12, apkPath, trackName)
+        publisher.publishApk(packageName, SERVICE_ACCOUNT, apkPath, trackName)
     }
 }
 
@@ -36,6 +36,6 @@ task publishBundle() {
     doLast
     {
         def publisher = new Publisher()
-        publisher.publishBundle(packageName, SERVICE_ACCOUNT_EMAIL, SERVICE_ACCOUNT_P12, bundlePath, trackName)
+        publisher.publishBundle(packageName, SERVICE_ACCOUNT, bundlePath, trackName)
     }
 }

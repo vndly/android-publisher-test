@@ -2,16 +2,16 @@ apply plugin: 'com.android.application'
 
 android
 {
-    compileSdkVersion 29
-    buildToolsVersion '29.0.1'
+    compileSdkVersion 30
+    buildToolsVersion '30.0.2'
 
     defaultConfig
     {
         applicationId 'com.mauriciotogneri.testpublish'
         minSdkVersion 18
-        targetSdkVersion 27
-        versionCode 20
-        versionName '20.0.0'
+        targetSdkVersion 30
+        versionCode 21
+        versionName '21.0.0'
     }
 
     dexOptions

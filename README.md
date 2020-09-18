@@ -8,6 +8,9 @@ RELEASE_KEY_PASSWORD=xxx
 RELEASE_STORE_PASSWORD=xxx
 RELEASE_STORE_FILE=xxx
 
-SERVICE_ACCOUNT_EMAIL=xxx
-SERVICE_ACCOUNT_P12=xxx
+SERVICE_ACCOUNT=xxx
+
+android.enableJetifier=true
+android.useAndroidX=true
+android.enableR8=true
 ```
